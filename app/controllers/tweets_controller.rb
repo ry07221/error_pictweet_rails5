@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :set_tweet, only: [:edit, :show]
+  before_action :set_tweet, only: [:edit, :show, :destroy, :update]
   before_action :move_to_index, except: [:index, :show, :search]
 
   def index
