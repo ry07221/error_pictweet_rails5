@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :tweets, only: [:new, :index, :edit, :show, :update, :destroy] do  
     resources :comments, only: :create
     collection do
-      get :search
+      get 'search'
     end
   end
   resources :users, only: :show

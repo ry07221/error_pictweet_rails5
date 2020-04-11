@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :tweats
-  has_many :comments               #commentsテーブルとのアソシエーション
+  has_many :comments
 end
